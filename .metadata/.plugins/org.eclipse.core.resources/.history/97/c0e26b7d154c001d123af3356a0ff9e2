@@ -1,0 +1,22 @@
+package Excepciones;
+import java.util.*;
+
+public class OtroEjemploExcepciones {
+	static Scanner es=new Scanner(System.in);
+
+
+	public static void main(String[] args) {
+		
+
+		int x=LeerEntero(x);
+	}//Fin del main
+	
+	//Metodo Que lea un Entero
+	
+	private static int LeerEntero(int x) {
+		
+		System.out.println("Ingrese un Numero Entero");
+		 x=es.nextInt();
+		return x;
+	}
+}

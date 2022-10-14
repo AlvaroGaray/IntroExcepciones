@@ -1,0 +1,34 @@
+package Excepciones;
+import java.util.*;
+public class IntroExcepciones {
+
+	public static void main(String[] args) {
+
+		Scanner es=new Scanner(System.in);
+		
+		//Dividir 2 numeros
+		
+		int x=48; int y=0;
+		DividirSinExcepciones(x,y);
+		DividirConExcepciones(x,y);
+	}//fin del main
+	
+	private static int DividirSinExcepciones(int x, int y) {
+		
+		if(y!=0) {
+			return x/y;
+		}else {
+			return 0;
+		}
+	}
+	
+	private static int DividirConExcepciones(int x, int y) {
+		
+		try {
+			return x/y;
+		} catch(ArithmeticException ex) {
+			return 0;
+		}
+	}
+
+}

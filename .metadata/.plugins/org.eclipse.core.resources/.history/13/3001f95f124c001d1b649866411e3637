@@ -1,0 +1,28 @@
+package Excepciones;
+import java.util.*;
+public class IntroExcepciones {
+
+	public static void main(String[] args) {
+
+		Scanner es=new Scanner(System.in);
+		
+		//Dividir 2 numeros
+		
+		System.out.println("Ingrese 2 numeros para Dividir");
+		System.out.println("Ingrese X:");
+		int x=es.nextInt();
+		System.out.println("Ingrese Y:");
+		int y=es.nextInt();
+		DivirdirSinExcepciones(x,y);
+	}//fin del main
+	
+	private static int DividirSinExcepciones(int x, int y) {
+		
+		if(y!=0) {
+			return x/y;
+		}else {
+			return 0;
+		}
+	}
+
+}
